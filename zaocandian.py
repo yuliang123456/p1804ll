@@ -17,8 +17,8 @@ def banka():
     zhuzhi=input('请写入你的家庭住址')
     dic={'name1':name,'age1':age,'phone1':phone,'zhuzhi1':zhuzhi}
     list_p.append(dic)
-    sb=random.randint(111111111111111111,182222222222222222)
-    print(sb)
+    suijishu=random.randint(100000000000000000,9999999999999999999)
+    print(suijishu)
     print('恭喜你获得新卡号')
     while True:
         mima=int(input('请输卡号密码'))

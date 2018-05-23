@@ -16,8 +16,13 @@ a=int(input('请输入第一个数字'))
 while True:
 
     b=input('请输入符号,或输入q推出')
-    while (b != '+' and b != '-' and b != '*' and b != '/' and b != 'q'):
+
+
+    b= 1
+
+    if b != '+' and b != '-' and b != '*' and b != '/' and b != 'q':
         print('非法输入，请正确输入如：+ - * /')
+        b = b + 1
         b=input('请输入符号,或输入q推出')
 
     if b == 'q':
