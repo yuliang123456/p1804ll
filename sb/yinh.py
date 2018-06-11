@@ -10,7 +10,7 @@ def zaocan():#银行菜单
     print('5.取钱')
     print('6.退出')
 money=0
-def banka():
+def banka():  #办卡菜单
     global money
     print('*'*30)
     print ('请输入你的个人信息')
@@ -52,7 +52,7 @@ def chaxun():
             print('账户不存在')
 
 money=0
-def cunqian():
+def cunqian():  #存钱菜单
     print('欢迎你存钱')
     user=input('请输入你的账户名')
     mima=int(input('请输入密码'))
@@ -73,7 +73,7 @@ def cunqian():
 
 
 money=0
-def quqian():
+def quqian():  #取钱菜单
     print('欢迎你取钱')
     user=input('请输入你的账户名')
     mima=int(input('请输入密码'))
@@ -92,7 +92,7 @@ def quqian():
 
 
 
-def zhuxiao():
+def zhuxiao():  #注销菜单
 
     user=input('请输入你的账户名')
     mima=int(input('请输入密码'))
@@ -116,9 +116,10 @@ while True:
     elif xin=='2':
         zhuxiao()
     else:
-        wo = input('你想要推出吗?Y/N')
+        wo = input('你想要退出吗?Y/N')
         if wo == 'Y':
-            print('成功推出')
+            print('~'*30)
+            print('成功退出,欢迎下次光临')
             break
 
 
